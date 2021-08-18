@@ -1,0 +1,76 @@
+.link{
+    position: relative;
+    color: #545454 !important;
+    font-size: 15px !important;
+   // padding : 1rem 0.5rem !important;
+    transition: 0.2s all ease;
+    &::after{
+        left: 0%;
+        bottom: -2px;
+        width: 0px;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: var(--orange);
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+    &:hover{
+        color: var(--orange) !important;
+        &::after{
+            width: 100%;
+        }
+    }
+    &.hover{
+        color: var(--orange) !important;
+    }
+}
+
+ul,li{
+    list-style: none;
+}
+.main{
+    transition: all 0.4s ease;
+    opacity: 0;
+    @media(max-width:600px){
+        justify-content: flex-start !important;
+    }
+}
+.facebook-btn{
+
+}
+.lds-hourglass {
+    position: fixed;
+    top: 45%;
+    z-index: 100;
+    left: 47%;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid var(--orange);
+    border-color: #ffc107 transparent var(--orange) transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+  

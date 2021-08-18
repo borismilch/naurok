@@ -1,0 +1,60 @@
+.header {
+    
+  
+    &__toggler-icon {
+        position: absolute;
+        background-color: var(--black);
+        top: 50%;
+        left: 25%;
+        height: 2.5px;
+        transition-duration: 0.3s;
+        width: 0px;
+        &::after, &::before{
+            position: absolute;
+            left: 25%;
+            width: 22px;
+            background-color: var(--black);
+            height: 3px;
+            content: "";
+            left: 0;
+            transition-duration: 0.3s;
+        }
+        &::before{
+            top: 0px;
+            transform: rotate(-45deg);
+           }
+         &::after{
+           top: 0px;
+           transform: rotate(45deg);
+        }
+      
+    }
+    &__toggler{
+        position: relative;
+        border: 0px;
+        width: 42px;
+        height: 35px;
+        background-color: #fff;
+        display: flex;
+        @media (min-width:992px) {
+            display: none;
+        }
+        &.collapsed{
+            .header__toggler-icon{
+                width: 22px;
+                &::before{
+                    top: -7.2px;
+                    transform: rotate(0deg);
+                   }
+                 &::after{
+                   top: 7.2px;
+                   transform: rotate(0deg);
+                   }
+            }
+        }
+    }
+   
+}
+.nav-item{
+    padding: 0.4rem 0.5rem;
+}

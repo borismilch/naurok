@@ -1,0 +1,32 @@
+.navbar{
+  background-color: white !important;
+  height: 66px;
+  .container-md{
+    background-color: white;
+}
+
+}
+.nav-link{
+  padding: 0px !important;
+}
+.nav-item{
+  padding: 0px 0.5rem;
+}
+.navbar-brand img{
+  max-height: 40px;
+  object-fit: cover;
+}
+.navbar-collapse{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: flex-start;
+  @media (max-width:992px) {
+    flex-direction: column-reverse;
+  }
+}
+.btn{
+  &:disabled{
+    opacity: 0.4;
+  }
+}

@@ -1,0 +1,20 @@
+@import "normalize.css";
+@import "roboto.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;;
+}
+
+h1{
+    text-align: center;
+   
+}
+.content{
+ padding-top: 66px;
+}

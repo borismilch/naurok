@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+    <main id="main-auth" class="content main auth">
+        <h1 class="auth__title text-center ">Реєстрація</h1>
+        <div class="auth__wrapper d-flex justify-content-center w-100">
+        <form action="" data-form="reg" class="auth-form" id="reg-form">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label auth-label fw-bold">Прізвище та ім'я</label>
+          <input required type="text" minlength="6" class="form-control auth-form-control" data-value="name" id="exampleFormControlInput1" placeholder="Прізвище та ім'я">
+          </div>
+          
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label auth-label fw-bold" >Email</label>
+            <input data-value="email" required type="email" minlength="6" class="form-control auth-form-control" id="exampleFormControlInput2" placeholder="Email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput3" class="form-label auth-label fw-bold" >Password</label>
+            <input data-value="password" required minlength="6" type="password" class="form-control auth-form-control" id="exampleFormControlInput3" placeholder="Password">
+          </div>
+          <a href="" class="auth-form__forgot">Forgot password?</a>
+          <button type="submit" class="btn btn-warning text-white d-block w-100 btn-block my-3">Зареєструватися</button>
+          <div class="auth-form__or"><span>aбо</span> </div>
+          <a type="btn" class="btn btn-white facebook-btn border-primary text-primary w-100 py-2 my-3 d-flex justify-content-start fs-6 align-items-center" ><i class="bi bi-facebook fs-4 me-1"></i> 
+         <span>вхід за допомогою Facebook</span> </a>
+         
+        <nav aria-label="breadcrumb my-3">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Вхід</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a href="">Мене пароль учитель</a></li>
+          </ol>
+        </nav>
+        </form>
+        </div>
+        </main>
+</body>
+</html>
