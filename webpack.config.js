@@ -47,7 +47,8 @@ module.exports = {
     devServer: {
         publicPath: "/",
         contentBase: "./public",
-        hot: isDev
+        hot: isDev,
+        stats: "errors-only"
     },
     
     plugins:[
@@ -68,6 +69,16 @@ module.exports = {
             title: 'reg',
             filename:'register.html',
             template: './register.html'
+        }),
+        new HTMLWebpackPlugin({
+            title: 'test',
+            filename:'test.html',
+            template: './tests.html'
+        }),
+        new HTMLWebpackPlugin({
+            title: 'result',
+            filename:'results.html',
+            template: './result.html'
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({
@@ -102,6 +113,7 @@ module.exports = {
                 loader: 'file-loader',
                 options : {
                     hmr:isDev,
+                    name: '[name].[ext]'
                 }
           },
         ],

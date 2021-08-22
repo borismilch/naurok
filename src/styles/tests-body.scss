@@ -1,0 +1,99 @@
+
+.tests-body {
+
+    // .tests-body__columns
+
+    &__columns {
+        display: flex;
+       // gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+
+.ops{opacity: 0; transition: all 0.4s ease;}
+.tests-body-item {
+   
+    transition: all 0.4s ease;
+    border: 0px;
+    background-color: white;
+    box-shadow: 0 2px 3px rgb(57 65 75 / 20%);
+    overflow: hidden;
+    border-radius: 6px;
+    line-height: 130%;
+    font-family: "Roboto", sans-serif !important;
+    &:hover{
+        box-shadow: 0 2px 8px rgb(57 65 75 / 20%);
+    }
+		// .tests-body-item__img
+
+		&__img  {
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+            & img{
+                transition: 1.2s all ease;
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+            }
+            &:hover{
+                & img{
+                    transform:  scale(1.2);
+                }
+                .tests-body-item-overlay__count{
+                    opacity: 1;
+                    transform:  scale(1);
+                }
+            }
+		}
+
+        &__text{
+            color: #212121 !important;
+            font-weight: 600;
+            font-size: 17px;
+            padding: 10px 15px;
+            height: 100px;
+            & p{margin: 5px;}
+            
+        }
+}
+
+
+.tests-body-item-overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 15px;
+    // .tests-body-item-overlay__count
+
+    &__count {
+        color: #212121 !important;
+        font-weight: 600;
+        font-size: 11px;
+        font-family: "Roboto", sans-serif !important;
+        padding: 0px 7px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        opacity: 0.6;
+        transform: scale(0);
+        background-color: #f2f2f2;
+        border: 1px #2121219d solid;
+    }
+}
+
+
+.title2{
+    padding: 20px 0px 5px 0px;
+    color: #545454 !important;
+    font-weight: 700;
+    line-height: 130%;
+    font-family: "Roboto", sans-serif !important;
+    @include adaptiv-font(24, 20)
+}

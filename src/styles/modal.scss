@@ -1,0 +1,133 @@
+.modal-content{
+	border-radius: 12px;
+	box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    overflow: hidden;
+}
+.tests-modal {
+	//margin: 20px 10px !important;
+	max-width: 600px;
+	flex: 1 1 auto;
+	position: relative;
+	
+		// .tests-modal__previev
+
+		&__previev {
+			display: flex;
+			flex-direction: column;
+			padding: 0px !important;
+		}
+
+		// .tests-modal__img
+
+		&__img {
+			position: relative;
+			height:  200px;
+			& img{
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__heading{
+			width: 100%;;
+			flex: 1 1 auto;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+
+		}
+		// .tests-modal__title
+
+		&__title {
+			font-size: 22px;
+			font-family: "Roboto" ,sans-serif;
+
+		}
+
+		// .tests-modal__li
+		&__list {
+			padding: 0px;
+		}
+
+		&__li {
+			width: 100%;
+			padding: 5px;
+			margin: 5px 0px;
+			border-radius: 5px;
+			background-color: #f7f7f7;
+			font-size: 14px;
+			line-height: 1.4;
+
+		}
+}
+
+
+.tests-modal-overlay {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding: 10px;
+		// .tests-modal-overlay__quests
+
+		&__quests, &__vievs {
+			font-size: 14px;
+			background: #f1f1f1;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			padding: 3px 10px;
+			color: #666;
+			font-family: "OpenSans SemiBold";
+
+		 }
+
+		// .tests-modal-overlay__vievs
+
+		
+}
+.tests-modal-categoies {
+	display: flex;
+	flex: 1 1 auto;
+ justify-content: space-between;
+	position: relative;
+
+		// .tests-modal-categoies__author
+
+		&__author {
+			flex: 1 1 100%;
+			text-align: left;
+			align-items: center;
+			font-size: 16px;
+			color: #666;
+			font-family: "Roboto", sans-serif;
+		}
+
+		// .tests-modal-categoies__category
+
+		&__category {
+			display: flex;
+			justify-content: flex-end;
+			& span{
+				padding: 3px 8px;
+				background: #f7f7f7;
+				border-radius: 6px;
+				color: #333;
+				font-size: 14px;
+
+			}
+		}
+}
+.tests-btn{
+	padding: 10px 7px;
+	background-color: rgb(255, 171, 0);
+	color: white;
+	font-size: 14;
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline:  none;
+}

@@ -1,0 +1,76 @@
+
+
+[
+    {
+      "id" : 0,
+      "ask" : "Сколько времени сидишь перед монитором?",
+      "array" : [{"ansvear" : "много" , "value" : "false"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "true"}]
+    },
+
+
+    {
+        "id" : 1,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]
+    },
+
+    {
+        "id" : 2,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]
+    },
+
+    {
+        "id" : 3,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "false"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "true"}]
+    },
+
+    {
+        "id" : 4,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "false"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "true"}]  
+    },
+
+    {
+        "id" : 5,
+        "ask" : "Сколько времени сидишь перед монитором?",
+      "array" : [{"ansvear" : "много" , "value" : "false"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "true"}] 
+    },
+
+    {
+        "id" : 6,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "false"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "true"}]
+    },
+
+    {
+        "id" : 7,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]
+    },
+    
+    {
+        "id" : 8,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]   
+    },
+
+    {
+        "id" : 9,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]   
+    },
+
+    {
+        "id" : 10,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]
+    },
+
+    {
+        "id" : 11,
+        "ask" : "Сколько времени сидишь перед монитором?",
+        "array" : [{"ansvear" : "много" , "value" : "true"},{"ansvear" : "мало" , "value" : "false"}, {"ansvear" : "среднє" , "value" : "false"} , {"ansvear" : "незнаю" , "value" : "false"}]
+    }
+]

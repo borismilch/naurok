@@ -26,7 +26,32 @@
   }
 }
 .btn{
+  
   &:disabled{
     opacity: 0.4;
   }
 }
+h1{
+  margin: 0.5rem 0px !important;
+  text-align: left !important;
+  @media (max-widht:992px) {
+    text-align: center !important;
+  }
+}
+.breadcrumb-item{
+  @include adaptiv-font(19, 13)}
+
+  #select{
+    flex:  0 0 auto;
+    height: 40px;
+    width: auto;
+    font-size: 14px;
+    & option{
+      
+    }
+  }
+  .ff{
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+    justify-content: space-between;
+  }

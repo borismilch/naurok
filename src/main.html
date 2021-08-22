@@ -9,12 +9,47 @@
     <title>Document</title>
 </head>
 <body>
-    <main class="main" id="page-main">
-    <div class="container">
-        <h1>Webpack</h1>
+<main class="main" id="page-main">
+   
+<div class="container-md">
+<div class="tests">
+    <div class="tests-head row ">
+        <div class="col-12 col-lg-6 d-flex flex-column">
+            <h1 class="tests-head__title">Онлайн-тести</h1>
+            <p class="tests-head__text">Інтерактивні завдання для контролю знань та засвоєння вивченого матеріалу. Обирай для себе тест, або скористайся кодом, який надав учитель для виконання домашнього завдання.</p>
+        </div>
+        <div class="col-12 tests-form__parent  d-flex align-items-center justify-content-center col-lg-6" id="main-form-parent">
+         <form class="d-flex auth-form align-items-end flex-column flex-lg-row  tests-form " >  
+        <div class="mb-3 w-100">
+          <label for="exampleFormControlInput1" class="text-nowrap  form-label auth-label fw-bold">Приєднатись до тесту</label>
+          <input data-value="test-name" required type="email" minlength="6" class="form-control tests__action auth-form-control" id="exampleFormControlInput1" placeholder="Фамилия, имя, отчество ">
+         </div>
+         <div class="mb-3 w-100">
+            <input data-value="test-name" required type="email" minlength="6" class="form-control tests__action auth-form-control" id="exampleFormControlInput1" placeholder="Код теста">
+           </div>
+         <button type="submit" class="btn tests__action tests__btn btn-warning text-white d-block w-100 btn-block ">Приєднатися</button>
+        </form> 
+        </div>
     </div>
-    <a href="./analytics.html">fffffffffffffff</a>
 
+
+
+  <div class="tests-body">
+    <div class="d-flex ff ">
+<h3 class="title2 text-nowrap ">Цікаві тести</h3> 
+<select  class="form-select" id="select" aria-label="Default select example">
+  <option selected>Базова сортіровка</option>
+  <option value="1">За кількістю завдань</option>
+  <option value="2">За переглядами</option>
+</select>
+</div>
+<div class="tests-body__columns" id="tests-output">
+</div>
+  </div>
+ 
+</div>
+</div>
 </main>
 </body>
 </html>
+

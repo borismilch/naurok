@@ -1,4 +1,5 @@
-export function createHeader(img){
+   
+   export function createHeader(img){
     const header = document.createElement('nav');
     header.className = "navbar shadow-sm navbar-expand-lg navbar-light bg-light fixed-top"
     header.insertAdjacentHTML("afterbegin", `  <div class="container-md">
@@ -98,7 +99,37 @@ export function createHeader(img){
     }
    export function createloader(){
     const loader = document.createElement('div');
-    loader.classList.add('lds-hourglass')
+    loader.classList.add('lds-wrapper')
+    loader.insertAdjacentHTML('afterbegin', `<div class="lds-hourglass"></div>`)
     return loader
     
     }
+  function createTests(arr, arr2 =[]){
+    
+   return arr.map(createTestItem)
+
+  }
+
+  export function createTestItem(obj){
+  let {id, img , text, questions, visits} = obj
+const item =  document.createElement('div');
+item.className = 'col-12 ops col-sm-6 col-md-4 col-lg-3 p-2'
+  item.insertAdjacentHTML('afterbegin', `<div class="card tests-body-item" data-id = ${id}>
+  <div class="tests-body-item__img">
+   <img src="${img}" class="card-img-top tests-body-item__img " alt="...">
+   <div class="tests-body-item-overlay">
+      <div class="tests-body-item-overlay__count" data-desc="quests">quests: <span data-span ="quests">${questions}</span> </div>
+      <div class="tests-body-item-overlay__count" data-desc="visits"> visits: <span data-span="visits">${visits}</span></div>
+   </div>
+  </div>
+  
+<div class="card-body tests-body-item__text">      
+ <p> ${text}</p>
+</div>
+</div>`)
+  return item
+  
+
+  
+  
+ } 

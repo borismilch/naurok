@@ -32,18 +32,35 @@ ul,li{
 .main{
     transition: all 0.4s ease;
     opacity: 0;
+    visibility: hidden;
     @media(max-width:600px){
         justify-content: flex-start !important;
     }
 }
 .facebook-btn{
-
+    transition: all 0.3s ease;
+    &:hover{
+        background-color:#0d6efd ;
+        color: white !important;
+    }
 }
+
+.lds-wrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
 .lds-hourglass {
-    position: fixed;
-    top: 45%;
+    
+    
     z-index: 100;
-    left: 47%;
+    
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -73,4 +90,8 @@ ul,li{
       transform: rotate(1800deg);
     }
   }
-  
+ .croos{
+   position: absolute;
+   top: 10px;right: 10px;
+   z-index: 10;
+ } 
